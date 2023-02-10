@@ -43,7 +43,7 @@ class path_maker :
     def main_loop(self):
         self.timer=threading.Timer(0.10,self.main_loop)
         self.timer.start()
-        f=open(self.full_path, 'a')
+        f=open(self.full_path, 'w')
         
         status_data=self.status.get_data()
         position_x=status_data[12]
